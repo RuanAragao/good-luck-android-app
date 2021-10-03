@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Good Luck</string>
+    <string name="number_title">Número da sorte</string>
+    <string name="good_luck">Good Luck</string>
+    <string name="btn_select_text">Quero esse!</string>
+    <string name="btn_new_text">Gerar outro</string>
+</resources>

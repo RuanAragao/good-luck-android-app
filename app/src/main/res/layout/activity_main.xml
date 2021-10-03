@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewHeader"
+        android:layout_width="266dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/good_luck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/good_luck_logo" />
+
+    <TextView
+        android:id="@+id/textViewNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:shadowColor="#80000000"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/number_title"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHeader" />
+
+    <View
+        android:id="@+id/viewNumber"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="13dp"
+        android:background="#D6FFD8"
+        android:importantForAccessibility="no"
+        android:requiresFadingEdge="vertical"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumberTitle" />
+
+    <TextView
+        android:id="@+id/numberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_mono"
+        android:shadowColor="#80000000"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="--- ---"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewNumber"
+        app:layout_constraintEnd_toEndOf="@+id/viewNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewNumber" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/btn_select_text"
+        android:textSize="24sp"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewNumber" />
+
+    <Button
+        android:id="@+id/btnNewNumber"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/btn_new_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
