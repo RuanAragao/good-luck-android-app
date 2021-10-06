@@ -27,8 +27,8 @@ class MainActivity : AppCompatActivity() {
         val numList = generateNumber()
         val numberView: TextView = findViewById(R.id.numberView)
 
-        // Assemble the string with all the numbers and space between the third and fourth number.
-        numberView.text = "${numList[0]}${numList[1]}${numList[2]} ${numList[3]}${numList[4]}${numList[5]}"
+        // Assemble the string with all the numbers and space between tow digits.
+        numberView.text = "${numList[0]}${numList[1]} ${numList[2]}${numList[3]} ${numList[4]}${numList[5]} ${numList[6]}${numList[7]}"
     }
 
     /**
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         val number: MutableList<Int> = ArrayList()
 
         // Repeat for 6 times
-        for (i in 1..6) {
+        for (i in 1..8) {
             // Add a random number between 0 and 9 to the array of numbers "number"
             number.add((0..9).random())
         }
