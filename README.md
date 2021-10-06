@@ -20,5 +20,6 @@ A principio o app está gerando internamente o número, mas a ideia é que ele u
 
   Serve para gerar um novo número e descartar o anterior
 
-
+## Screenshot
+![image](https://user-images.githubusercontent.com/1015013/136162667-dce18cdd-2ed3-4cee-babf-89f332dc9f98.png)
 
